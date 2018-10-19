@@ -90,3 +90,14 @@ $user_3 = [					// Asociatyvus masyvas
 	echo $users[0]['drinks'][0];
 
 
+ // float - trupmeninis skaicius
+
+	$kaina = 89;
+
+	$kaina_su_pvm = getVatPrice($kaina, 0.18);
+
+	function getVatPrice($price, $vat) {
+
+		$vatPrice = $price * (1+$vat);
+		return $vatPrice;
+	}
