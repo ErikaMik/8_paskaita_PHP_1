@@ -6,11 +6,16 @@
 // $l = 500;
 
 function getArea($h, $w, $l) {
-		return round(($h * $w) * 2 + ($h * $l) * 2 + ($h * $w)) . "<br>";
+		return $pool = round(($h * $w) * 2 + ($h * $l) * 2 + ($h * $w)) . "<br>";
 }
 
 function gettile($tile) {
-		return round($tile**2);
+		return $tile = round($tile**2);
+}
+
+function getCount($pool, $tile) {
+		return $count = $pool / $tile;
 }
 echo getArea(200,300,500);
 echo getTile(33);
+echo getCount($pool, $tile);
